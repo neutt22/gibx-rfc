@@ -24,3 +24,9 @@ Route::get('/contacts', function()
 {
 	return View::make('contacts');
 });
+
+Route::get('/cars', array('uses' => 'HomeController@getCars'));
+Route::get('/years', array('uses' => 'HomeController@getYears'));
+Route::get('/models', array('uses' => 'HomeController@getModels'));
+
+Route::get('/compare', array('uses' => 'HomeController@getCompare'));

@@ -80,43 +80,92 @@
 				<div class="wrapper row">
 					<section class="col-1-4">
 						<div class="wrap-col">
-							<h3><span class="dropcap">A</span>Business<span>planning</span></h3>
-							<p class="pad_bot1">Progress is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free website templates</a> created by TemplateMonster.com, optimized for 1024x768 res.</p>
-							<a href="#" class="link1">Read More</a>
+							<h3><span class="dropcap">A</span>Save Time/<span>Money</span></h3>
+							<p class="pad_bot1">You no longer have to search on your own for the best car insurance and financial products in the Philippines. We make sure you don’t miss out on the best deals!</p>
 						</div>
 					</section>
 					<section class="col-1-4">
 						<div class="wrap-col">
-							<h3><span class="dropcap">B</span>Business<span>strategies</span></h3>
-							<p class="pad_bot1">This <a href="http://blog.templatemonster.com/2011/07/11/free-website-template-slider-typography/">Progress Template</a> goes with two packages – with PSD source files and without them.</p>
-							<a href="#" class="link1">Read More</a>
+							<h3><span class="dropcap">B</span>Instant<span>Access</span></h3>
+							<p class="pad_bot1">Find all the product and pricing information you need in one website. See all offers and make the right choice with just a few clicks.</p>
 						</div>
 					</section>
 					<section class="col-1-4">
 						<div class="wrap-col">
-							<h3><span class="dropcap">C</span>Powerful<span>analytics</span></h3>
-							<p class="pad_bot1">PSD source files are available for free for registered members. The basic package is available for anyone.</p>
-							<a href="#" class="link1">Read More</a>
+							<h3><span class="dropcap">C</span>Free<span>Qoutes</span></h3>
+							<p class="pad_bot1">Get free quotes and select the best car insurance in the Philippines. Know your auto insurance options and choose a plan with adequate coverage for your needs and budget.</p>
 						</div>
 					</section>
 					<section class="col-1-4">
 						<div class="wrap-col">
-							<h3><span class="dropcap">D</span>Worldwide<span>solutions</span></h3>
-							<p class="pad_bot1">This website template has several pages: Home, News, Services, Products, Contacts (contact form doesn’t work).</p>
-							<a href="#" class="link1">Read More</a>
+							<h3><span class="dropcap">D</span>Pay<span>Annually</span></h3>
+							<p class="pad_bot1">Paying your premium in an annual lump sum may reduce the cost of your insurance. Some insurers often charge you with additional fees if you choose to pay your premium on a monthly basis.</p>
 						</div>
 					</section>
 				</div>
 				<div class="wrapper row">
-					<section class="col-3-4">
+					<!-- <section class="col-3-4">
 						<div class="wrap-col">
 							<h2 class="under">Welcome, visitor!</h2>
 							<div class="wrapper">
 								<figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure>
-								<p class="pad_bot1">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
-								<p>
-										Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+								<p class="pad_bot1">It may be tempting to save money by sticking to CTPL insurance. But getting comprehensive coverage will keep you from spending thousands of pesos on repairs if your car gets damaged. Here some basic tips to help save you money when getting a policy.</p>
 							</div>
+						</div>
+					</section> -->
+					<section class="col-2-4">
+					<!-- <figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure> -->
+						<div class="wrap-col">
+							<h2 class="under">Compare Auto Insurance</h2>
+							<div class="wrapper">
+								<figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure>
+								<p class="pad_bot1">
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="col-1-4">
+						<div class="wrap-col">
+							<h2>...</h2>
+							<p class="pad_bot1">
+									<!-- It may be tempting to save money by sticking to CTPL insurance. But getting comprehensive coverage will keep you from spending thousands of pesos on repairs if your car gets damaged. Here some basic tips to help save you money when getting a policy. -->
+									<form method="GET" action="/compare">
+										<p>
+											Brand:
+											<select name="car" id="cars">
+												<option>Choose brand</option>
+											</select>
+										</p>
+										<p>
+											Year:
+											<select name="year" id="years">
+												<option>Choose year</option>
+											</select>
+										</p>
+										<p>
+											Model:
+											<select name="model" id="models">
+												<option>Choose model</option>
+											</select>
+										</p>
+										<p>
+											Location: <br/>
+											<input type="radio" name="location" value="luzon" checked="checked">Luzon
+											<input type="radio" name="location" value="Viz/Min">Vizayas/Mindanao									</p>
+										<p>
+											Usage: <br/>
+											<input type="radio" name="usage" value="private" checked="checked">Personal
+											<input type="radio" name="usage" value="commercial">Commercial
+										</p>
+										<p>
+											Mortgaged?:<br/>
+											<input type="radio" name="coverage" value="yes" checked="checked">Yes
+											<input type="radio" name="coverage" value="no">No
+											<br/>
+											<input type="submit" value="Compare" />
+										</p>
+									</form>
+								</p>
 						</div>
 					</section>
 					<section class="col-1-4">
@@ -127,24 +176,24 @@
 							  <ul>
 								<li>
 									<div>
-										“Nam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.”
+										“Major major thanks to GIBX! I got to get Car Insurance that I can afford, and all the features I need!”
 									</div>
 									<span><strong class="color1">James Coloway,</strong> <br>
 									Director</span>
 								</li>
 								<li>
 									<div>
-										“Nam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.”
+										“Can't believe how easy to use MoneyMax.ph's comparison tool is. Winner”
 									</div>
-									<span><strong class="color1">James Coloway,</strong> <br>
-									Director</span>
+									<span><strong class="color1">Jimmy Santos,</strong> <br>
+									Artist</span>
 								</li>
 								<li>
 									<div>
-										“Nam libero tempore, cum soluta nobis eligendi quo minus quod maxime placeat facere.”
+										“When I ask around in insurance companies, puro dedma lang, but with MoneyMax.ph, I got the assistance I needed to get my car insurance!”
 									</div>
-									<span><strong class="color1">James Coloway,</strong> <br>
-									Director</span>
+									<span><strong class="color1">Joaquin Morato,</strong> <br>
+									Developer</span>
 								</li>
 							  </ul>
 							</div>
