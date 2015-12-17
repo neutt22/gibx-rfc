@@ -26,7 +26,7 @@
 
 	<div class="row btn-danger">
 		<div class="col-md-12 row-no-padding">
-			<nav class="navbar navbar-inverse" style="padding: 0; margin: 0;">
+			<nav class="navbar navbar-inverse" style="padding: 0; margin: 0; border-radius: 0px;">
 				<div class="container-fluid">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">

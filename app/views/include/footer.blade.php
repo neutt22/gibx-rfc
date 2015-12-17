@@ -1,4 +1,4 @@
-	<div class="row text-center btn-info" style="padding-top: 5px;">
+	<div class="row text-center" style="padding-top: 5px; background-color: #128f76; color: white;">
 		<div class="col-md-12">
 			<p><b>WANNA SAY SOMETHING SHORT BUT SWEET HERE? <i>CALL US</i> OR SOMETHING...</b></p>
 		</div>
