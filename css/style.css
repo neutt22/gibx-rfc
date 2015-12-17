@@ -8,3 +8,31 @@ body{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
+
+#phone{
+	color: #189b53;
+	font-style: italic;
+	font-size: 20px;
+}
+
+#email a{
+	color: #189b53;
+	font-size: 15px;
+}
+
+.like-us{
+	font-size: 12px;
+	padding-top: 4px;
+}
+
+.top-header{
+	background-color: white;
+	background-image: url('/images/road.png');
+	background-size:100%;
+}
+
+.cool-words{
+	color: #898b8b;
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+}

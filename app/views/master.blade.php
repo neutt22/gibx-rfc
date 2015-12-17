@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/holder.min.js"></script>
 	  <!--[if lt IE 9]>
 	  	<script type="text/javascript" src="js/html5.js"></script>
@@ -23,75 +24,8 @@
 <!-- <img data-src="holder.js/300x200?theme=social&random=yes&text=title here"> -->
 
 <div class="container">
-	<div class="row btn-danger">
-		<div class="col-md-4 btn-info">
-			<p>
-				Call Us At: (02) 470 9283<br/>
-				Email Us At: email@gmail.com<br/>
-				<p>some words here...</p>
-			</p>
-		</div>
-		<div class="col-md-offset-6 col-md-2 btn-primary text-center">
-			<img data-src="holder.js/40x40?random=yes">
-			<img data-src="holder.js/40x40?random=yes">
-			<img data-src="holder.js/40x40?random=yes">
-			<div class="row">
-				<div class="col-md-12">
-					<p>LIKE US!</p>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="row btn-danger">
-		<div class="col-md-12 row-no-padding">
-			<nav class="navbar navbar-inverse" style="padding: 0; margin: 0;">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<img class="img-responsive" data-src="holder.js/300x60?random=yes&text=GIBX">
-						<!-- <a class="navbar-brand" href="#">GIBX</a> -->
-					</div>
-
-					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Support</a></li>
-							<!-- <li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-									<li class="divider"></li>
-									<li><a href="#">Separated link</a></li>
-									<li class="divider"></li>
-									<li><a href="#">One more separated link</a></li>
-								</ul>
-							</li> -->
-						</ul>
-						<form class="navbar-form navbar-left" role="search">
-							<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn btn-default">Search</button>
-						</form>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">FAQ</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
+	@include('include.header')
 
 	<div class="row btn-danger">
 		<div class="col-md-6 text-center btn-info row-no-padding">
@@ -212,32 +146,7 @@
 		</form>
 	</div>
 
-	<div class="row text-center btn-info" style="padding-top: 5px;">
-		<div class="col-md-12">
-			<p><b>WANNA SAY SOMETHING SHORT BUT SWEET HERE? <i>CALL US</i> OR SOMETHING...</b></p>
-		</div>
-	</div>
-
-	<div class="row text-center" style="padding-top: 5px; background-color: #282828; color: white; font-size: 12px;">
-		<div class="col-md-12">
-			<p>
-				<a href="/">Home </a>|
-				<a href="/">Blog </a>|
-				<a href="/">About </a>|
-				<a href="/">Contact </a>|
-				<a href="/">Support </a>|
-				<a href="/">FAQ </a>
-			</p>
-		</div>
-	</div>
-
-	<div class="row text-center" style="padding-top: 5px; background-color: #282828; color: white; font-size: 12px;">
-		<div class="col-md-12">
-			<p>
-				&copy; 2015-2016 GIBX Portal. All rights reserved. Use of this site constitutes acceptance of our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
-			</p>
-		</div>
-	</div>
+	@include('include.footer')
 
 </div>
 </body>
