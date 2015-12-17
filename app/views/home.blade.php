@@ -158,7 +158,7 @@
 											<input type="radio" name="usage" value="commercial">Commercial
 										</p>
 										<p>
-											Mortgaged?:<br/>
+											Mortgaged??:<br/>
 											<input type="radio" name="coverage" value="yes" checked="checked">Yes
 											<input type="radio" name="coverage" value="no">No
 											<br/>
