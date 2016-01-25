@@ -1,61 +1,51 @@
-	<div class="body4">
-		<div class="main zerogrid">
-			<article id="content2">
-				<div class="wrapper row">
-					<section class="col-1-4">
-					<div class="wrap-col">
-						<h4>Why Us?</h4>
-						<ul class="list1">
-							<li><a href="#">Lorem ipsum dolor sit</a></li>
-							<li><a href="#">Dmet, consectetur</a></li>
-							<li><a href="#">Adipisicing elit eiusmod </a></li>
-							<li><a href="#">Tempor incididunt ut</a></li>
-						</ul>
-					</div>
-					</section>
-					<section class="col-1-4">
-					<div class="wrap-col">
-						<h4>Address</h4>
-						<ul class="address">
-							<li><span>Country:</span>Philippines</li>
-							<li><span>City:</span>Mandaluyong</li>
-							<li><span>Phone:</span>(02) 574 9185</li>
-							<li><span>Email:</span><a href="mailto:">paodelro@gmail.com</a></li>
-						</ul>
-					</div>
-					</section>
-					<section class="col-1-4">
-					<div class="wrap-col">
-						<h4>Follow Us</h4>
-						<ul id="icons">
-							<li><a href="#"><img src="images/icon1.jpg" alt="">Facebook</a></li>
-							<li><a href="#"><img src="images/icon2.jpg" alt="">Twitter</a></li>
-							<li><a href="#"><img src="images/icon3.jpg" alt="">LinkedIn</a></li>
-							<li><a href="#"><img src="images/icon4.jpg" alt="">Delicious</a></li>
-						</ul>
-					</div>
-					</section>
-					<section class="col-1-4">
-					<div class="wrap-col">
-						<h4>Newsletter</h4>
-						<form id="newsletter" method="post">
-							<div>
-								<div class="wrapper">
-									<input class="input" type="text" value="Type Your Email Here"  onblur="if(this.value=='') this.value='Type Your Email Here'" onfocus="if(this.value =='Type Your Email Here' ) this.value=''" >
-								</div>
-								<a href="#" class="button" onclick="document.getElementById('newsletter').submit()">Subscribe</a>
-							</div>
-						</form>
-					</div>
-					</section>
-				</div>
-			</article>
+
+
+	<div class="row text-center" style="padding-top: 5px; background-color: #128f76; color: white;">
+		<div class="col-md-12">
+			<p><b>QUESTIONS? CALL US AT (02) 470 9283 OR EMAIL US AT ovejera.jimpaulo@gmail.com</b></p>
 		</div>
 	</div>
-<!-- 		<div class="main zerogrid">
-			<footer>
-				<a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html" target="_blank">Html5 Templates</a> by <a href="http://www.templatemonster.com/" target="_blank">Templatesmonster.com</a><br>
-				<a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html" target="_blank">Responsive Themes</a> by <a href="http://www.zerotheme.com/" target="_blank">Zerotheme.com</a><br>
-			</footer>
-		</div> -->
-<script type="text/javascript"> Cufon.now(); </script>
+
+	<div class="row" style="background-color: #282828; color: white; padding: 10px;">
+		<div class="col-md-4 text-center">
+			<p>PAYMENT METHODS</p>
+			<a target="_blank" href="https://www.paypal.com/ca/webapps/mpp/paypal-popup"><img src="/images/paypal.png"></a>
+		</div>
+		<div class="col-md-4 text-center">
+			<p>CUSTOMER SUPPORT</p>
+			<img src="/images/customer_support_banner.png" class="img-responsive center-block">
+		</div>
+		<div class="col-md-4 text-center">
+			<p>CONNECT WITH US</p>
+			<a href="facebook.com"><img src="images/fb.png"></a>
+			<a href="facebook.com"><img src="images/twitter.png"></a>
+			<a href="facebook.com"><img src="images/g+.png"></a>
+			<a href="facebook.com"><img src="images/instagram.png"></a>
+			<a href="facebook.com"><img src="images/youtube.png"></a>
+		</div>
+	</div>
+
+	<div class="row text-center" style="padding-top: 5px; background-color: #282828; color: white; font-size: 12px;">
+		<div class="col-md-12">
+			<p>
+				<a href="/">Home </a>|
+				<a href="/">Blog </a>|
+				<a href="/">About </a>|
+				<a href="/">Contact </a>|
+				<a href="/">Support </a>|
+				<a href="/">Careers </a>|
+				<a href="/">Testimonials </a>|
+				<a href="/">Downloads </a>|
+				<a href="/">Sitemap </a>|
+				<a href="/">FAQ </a>
+			</p>
+		</div>
+	</div>
+
+	<div class="row text-center" style="padding-top: 5px; background-color: #282828; color: white; font-size: 12px;">
+		<div class="col-md-12">
+			<p>
+				&copy; 2015-2016 GIBX Portal. All rights reserved. Use of this site constitutes acceptance of our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+			</p>
+		</div>
+	</div>

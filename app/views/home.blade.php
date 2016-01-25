@@ -1,128 +1,247 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>GIBX</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/zerogrid.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/responsiveslides.css" />
-<script type="text/javascript" src="js/jquery-1.6.js" ></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_400.font.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_700.font.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/tms-0.3.js"></script>
-<script type="text/javascript" src="js/tms_presets.js"></script>
-<script type="text/javascript" src="js/jcarousellite.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-  <!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-	<style type="text/css">
-		.bg{ behavior: url(js/PIE.htc); }
-	</style>
-  <![endif]-->
-	<!--[if lt IE 7]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
-		</div>
-	<![endif]-->
-	
-	<script src="js/responsiveslides.js"></script>
-	<script>
-		$(function () {
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			maxwidth: 960,
-			namespace: "centered-btns"
-		  });
-		});
-	</script>
-	
-</head>
-<body id="page1">
-<div class="body1">
-	<div class="body2">
-		<div class="main zerogrid">
-<!-- header -->
-			<header>
-				@include('include/header')
+@extends('master')
 
-				<div class="wrapper row">
-					<div class="slider">
-					  	<div class="rslides_container">
-							<ul class="rslides" id="slider">
-								<li><img src="images/img1.jpg" alt=""></li>
-								<li><img src="images/img2.jpg" alt=""></li>
-								<li><img src="images/img3.jpg" alt=""></li>
-								<li><img src="images/img4.jpg" alt=""></li>
-							</ul>
+@section('content')
+	@include('include.sign_pane')
+	<div class="row home-left-pane">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12 text-center" style="background-color: none; padding: 0; height: 400px;">
+					<iframe  src="/gibx.1.15.16/index.html" height="400px;" width="100%" frameBorder="0" scrolling="no" style="background-color: none; height: 400px;"></iframe>
+				</div>
+			</div>
+			<div class="row" style="padding-bottom: 10px;">
+				<div class="col-md-12">
+					<h3><b><i>LATEST BLOGS</i></b></h3>
+					<div class="row" style="padding: 5px; background-color: none;">
+						<div class="col-md-5" style="background-color: none;">
+							<img src="/images/news/news_3.jpg" class="img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-7" style="background-color: none;">
+							<h4><b><u>This Guy Don't Know How To Park</u></b></h4>
+							<p class="text-muted">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampde
+								<small><u><a href="">read more...</a></u></small>
+							</p>
+							<p>
+								<div class="row">
+									<div class="col-md-6">
+										<small>January 14, 2016</small>
+									</div>
+									<div class="col-md-6">
+										<small><i>14 comments</i></small>
+									</div>
+								</div>
+							</p>
+						</div>
+					</div>
+					<div class="row" style="padding: 5px; background-color: none;">
+						<div class="col-md-5" style="background-color: none;">
+							<img src="/images/news/news_2.jpg" class="img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-7" style="background-color: none;">
+							<h4><b><u>Do You Really Need An Insurance?</u></b></h4>
+							<p class="text-muted">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roo45 BC, making it ots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+								<small><u><a href="">read more...</a></u></small>
+							</p>
+							<p>
+								<div class="row">
+									<div class="col-md-6">
+										<small>January 11, 2016</small>
+									</div>
+									<div class="col-md-6">
+										<small><i>21 comments</i></small>
+									</div>
+								</div>
+							</p>
+						</div>
+					</div>
+					<div class="row" style="padding: 5px; background-color: none;">
+						<div class="col-md-5" style="background-color: none;">
+							<img src="/images/news/news_1.jpg" class="img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-7" style="background-color: none;">
+							<h4><b><u>Top 10 Reasons Why You Get Kidnapped</u></b></h4>
+							<p class="text-muted">
+								Contrary to popular belief, Lorem Ipsum isfrom 45 BC, making it over 2 McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a L
+								<small><u><a href="">read more...</a></u></small>
+							</p>
+							<p>
+								<div class="row">
+									<div class="col-md-6">
+										<small>January 10, 2016</small>
+									</div>
+									<div class="col-md-6">
+										<small><i>4 comments</i></small>
+									</div>
+								</div>
+							</p>
+						</div>
+					</div>
+					<div class="row" style="padding: 5px; background-color: none;">
+						<div class="col-md-5" style="background-color: none;">
+							<img src="/images/news/news_4.jpg" class="img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-7" style="background-color: none;">
+							<h4><b><u>How To Brake A Pancake Insurance</u></b></h4>
+							<p class="text-muted">
+								Contrary to popular belief, Lorem Ipsum isfrom 45 BC, making it over 2 McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a L
+								<small><u><a href="">read more...</a></u></small>
+							</p>
+							<p>
+								<div class="row">
+									<div class="col-md-6">
+										<small>January 05, 2016</small>
+									</div>
+									<div class="col-md-6">
+										<small><i>2 comments</i></small>
+									</div>
+								</div>
+							</p>
 						</div>
 					</div>
 				</div>
-			</header>
-<!-- header end-->
+			</div>
 		</div>
-	</div>
-</div>
-	<div class="body3">
-		<div class="main zerogrid">
-<!-- content -->
-			<article id="content">
-				<div class="wrapper row">
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">A</span>Save Time/<span>Money</span></h3>
-							<p class="pad_bot1">You no longer have to search on your own for the best car insurance and financial products in the Philippines. We make sure you don’t miss out on the best deals!</p>
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">B</span>Instant<span>Access</span></h3>
-							<p class="pad_bot1">Find all the product and pricing information you need in one website. See all offers and make the right choice with just a few clicks.</p>
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">C</span>Free<span>Qoutes</span></h3>
-							<p class="pad_bot1">Get free quotes and select the best car insurance in the Philippines. Know your auto insurance options and choose a plan with adequate coverage for your needs and budget.</p>
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">D</span>Pay<span>Annually</span></h3>
-							<p class="pad_bot1">Paying your premium in an annual lump sum may reduce the cost of your insurance. Some insurers often charge you with additional fees if you choose to pay your premium on a monthly basis.</p>
-						</div>
-					</section>
+
+		<form method="GET" action="/compare">
+			<div class="col-md-6 home-right-pane accent" style="padding-top: 10px; padding-bottom: 10px;">
+				<div class="row text-center">
+					<div class="col-md-12">
+						<h2><p><i>Start Comparing Now!</i></p></h2>
+					</div>
 				</div>
-				<div class="wrapper row">
-					<!-- <section class="col-3-4">
-						<div class="wrap-col">
-							<h2 class="under">Welcome, visitor!</h2>
-							<div class="wrapper">
-								<figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure>
-								<p class="pad_bot1">It may be tempting to save money by sticking to CTPL insurance. But getting comprehensive coverage will keep you from spending thousands of pesos on repairs if your car gets damaged. Here some basic tips to help save you money when getting a policy.</p>
-							</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="list-group">
+							<span class="list-group-item text-primary active">
+								<h4 class="list-group-item-heading">Choose Brand</h4>
+								<p class="list-group-item-text">Write something here about choosing car..</p>
+								<select class="form-control" name="car" id="cars">
+									<option>Choose brand...</option>
+								</select>
+							</span>
+							<span class="list-group-item text-primary">
+								<h4 class="list-group-item-heading">Choose Year</h4>
+								<p class="list-group-item-text">Write something here about choosing year..</p>
+								<select class="form-control" name="year" id="years">
+									<option>Choose year...</option>
+								</select>
+							</span>
+							<span class="list-group-item text-primary">
+								<h4 class="list-group-item-heading">Choose Model</h4>
+								<p class="list-group-item-text">Write something here about choosing model lol..</p>
+								<select class="form-control" name="model" id="models">
+									<option>Choose model...</option>
+								</select>
+							</span>
+							<span class="list-group-item text-primary">
+								<a href="#">Can't find your car?</a>
+							</span>
 						</div>
-					</section> -->
-					<section class="col-2-4">
-					<!-- <figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure> -->
-						<div class="wrap-col">
-							<h2 class="under">Compare Auto Insurance</h2>
-							<div class="wrapper">
-								<figure class="left marg_right1"><img src="images/1.jpg" alt=""></figure>
-								<p class="pad_bot1">
+					</div>
+				</div>
+				<div class="row" style="font-size: 15px;">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="list-group">
+							<span class="list-group-item text-primary">
+								<h4 class="list-group-item-heading">Options</h4>
+								<p class="list-group-item-text">Write something about options here....!</p>
+								<div class="row">
+									<div class="col-md-6">
+										<h5><span class="text-info">Location</span></h5>
+										<div class="radio">
+											<label>
+											<input type="radio" name="location" id="location" value="luzon" checked>
+												Luzon
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+											<input type="radio" name="location" id="optionsRadios1" value="Viz/Min">
+												Visayas/Mindanao
+											</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<h5><span class="text-info">Usage</span></h5>
+										<div class="radio">
+											<label>
+											<input type="radio" name="usage" id="usage" value="private" checked>
+												Private
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+											<input type="radio" name="usage" id="usage" value="commercial">
+												Commercial
+											</label>
+										</div>
+									</div>
+								</div>							
+								<div class="row">
+									<div class="col-md-6">
+										<h5><span class="text-info">Mortgaged</span></h5>
+										<div class="radio">
+											<label>
+											<input type="radio" name="coverage" id="coverage" value="private" checked>
+												Private
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+											<input type="radio" name="coverage" id="coverage" value="commercial">
+												Commercial
+											</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<h5><span class="text-info">Hmm?</span></h5>
+										<div class="radio">
+											<label>
+											<input type="radio" name="usage" id="usage" value="private" checked>
+												Hmm..1
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+											<input type="radio" name="usage" id="usage" value="commercial">
+												Hmm..2
+											</label>
+										</div>
+									</div>
+								</div>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<button type="submit" class="btn btn-lg btn-block btn-success center-block" id="okc">COMPARE NOW</button>
+					</div>
+				</div>
+				<div class="row text-center cool-words" style="margin-top: 40px;">
+					<div style="background-color: white; border-radius: 10px; border-top-right-radius: 0; border-bottom-right-radius: 0; 10px; padding: 10px;">
+						<h3>DOWNLOAD OUR APPS</h3>	
+						<div class="row">
+							<div class="col-md-6" style="font-size: 15px;">
+								<p>
+									Get updates through your mobiles apps! 
+									Download our latest mobile app to get a chance to have special promos and vouchers.
+									Read daily news and blogs right in your fingertips!
 								</p>
 							</div>
+							<div class="col-md-6">
+								<a href="https://play.google.com/store/apps/details?id=com.ovejera.jim.snailracer">
+									<img src="/images/google_play.png">
+								</a>
+								<div style="height: 5px;"></div>
+								<a href="https://play.google.com/store/apps/details?id=com.ovejera.jim.snailracer">
+									<img src="/images/app_store.png">
+								</a>
+							</div>
 						</div>
+<<<<<<< HEAD
 					</section>
 					<section class="col-1-4">
 						<div class="wrap-col">
@@ -165,49 +284,177 @@
 											<input type="submit" value="Compare" />
 										</p>
 									</form>
-								</p>
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h2>Testimonials</h2>
-							<div class="testimonials">
-							<div id="testimonials">
-							  <ul>
-								<li>
-									<div>
-										“Major major thanks to GIBX! I got to get Car Insurance that I can afford, and all the features I need!”
-									</div>
-									<span><strong class="color1">James Coloway,</strong> <br>
-									Director</span>
-								</li>
-								<li>
-									<div>
-										“Can't believe how easy to use MoneyMax.ph's comparison tool is. Winner”
-									</div>
-									<span><strong class="color1">Jimmy Santos,</strong> <br>
-									Artist</span>
-								</li>
-								<li>
-									<div>
-										“When I ask around in insurance companies, puro dedma lang, but with MoneyMax.ph, I got the assistance I needed to get my car insurance!”
-									</div>
-									<span><strong class="color1">Joaquin Morato,</strong> <br>
-									Developer</span>
-								</li>
-							  </ul>
-							</div>
-							<a href="#" class="up"></a>
-							<a href="#" class="down"></a>
-							</div>
-						</div>
-					</section>
+=======
+					</div>
 				</div>
-			</article>
+				<div class="row text-center" style="padding-bottom: 10px; margin-top: 60px;">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-12 row-no-padding">
+								<p>
+									NEWS LETTER<br/>
+									<small class="text-muted">
+										Ya know if ya subscribed on our news letter
+										it's gonna be alright
+									</small>
+>>>>>>> backup_unskin
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<form class="form-inline" method="POST" action="/subscribe">
+									<div class="form-group">
+										<input class="form-control input-sm" name="subscribe" placeholder="Enter your email..." type="text"/><br/>
+										<input type="submit" value="Subscribe" class="btn btn-danger btn-sm" />
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-left" style="">
+								<p>
+									<small class="text-muted">
+										By subscribing to GIBX newsletters, you acknowledge that you read and understood the Privacy Policy of GIBX.
+									</small>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- TRUSTED PARTNERS -->
+	<div class="row" style="background-color: white;">
+		<div class="col-md-12 text-center">
+			<h4>Our Trusted Partners</h4>
+			<img src="/images/partners.jpg" class="img-responsive center-block">
 		</div>
 	</div>
-	<!-- footer -->
-	@include('include/footer')
-	<!-- footer end -->
-</body>
-</html>
+
+	<!-- MODE OF PAYMENTS -->
+	<div class="row" style="background-color: #242424; color: #f8f8f8;">
+		<div class="col-md-12 text-center">
+			<h4><b>MODE OF PAYMENTS</b></h4>
+			<img src="/images/payment_types.jpg" class="img-responsive center-block">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<p class="text-left">
+						GIBX portal is powered and secured by Paypal through its payment gateway system. You can now pay for your chosen product online securely and hassle free with iChoose.ph and Paypal.
+					</p>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- TESTIMONIALS -->
+	<div class="row" style="background-color: white;">
+		<div class="col-md-6" style="color: #242424; background-color: none; margin-top: 25px;">
+			<h4><p><b><i>TESTIMONIALS</i></b></p></h4>
+			<div class="row" style="padding: 10px; background-color: none;">
+				<div class="col-md-12" style="background-color: none;">
+					<div class="row">
+						<div class="col-md-2" style="background-color: none;">
+							<img src="/images/clients/client_1.png" class="img-circle img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>Amazing!</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="background-color: none;">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>	
+						<blockquote>
+							<p class="cool-words">
+								<b>"I love this thing kase hahah ewan basta! :)"</b>
+							</p>
+							<footer>Some famous person in <cite title="Source Title">Facebook</cite></footer>
+						</blockquote>
+					</p>
+				</div>
+				<div class="col-md-12" style="background-color: none;">
+					<div class="row">
+						<div class="col-md-2" style="background-color: none;">
+							<img src="/images/clients/client_2.png" class="img-circle img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>Smooth Transaction!</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="background-color: none;">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>	
+						<blockquote>
+							<p class="cool-words">
+								<b>"Ang bilis kumilos ng backroom, nasagot lahat ng tanong ko. HAHA."</b>
+							</p>
+							<footer>Some famous person in <cite title="Source Title">Facebook</cite></footer>
+						</blockquote>
+					</p>
+				</div>
+				<div class="col-md-12" style="background-color: none;">
+					<div class="row">
+						<div class="col-md-2" style="background-color: none;">
+							<img src="/images/clients/client_3.png" class="img-circle img-responsive center-block" style="width: 100%;">
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<h4>5 Star Service</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12" style="background-color: none;">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+									<img src="/images/star.png" class="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>	
+						<blockquote>
+							<p class="cool-words">
+								<b>"Ang babait ng mga taga GIBX lalo na yung Jim ba yun"</b>
+							</p>
+							<footer>Some famous person in <cite title="Source Title">Facebook</cite></footer>
+						</blockquote>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6" style="margin-top: 25px;">
+			<h4><p><b><i>FACEBOOK CLAIMS FEED</i></b></p></h4>
+			@include('include.fb_page_plugin')
+		</div>
+	</div>
+
+@endsection
