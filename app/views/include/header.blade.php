@@ -2,25 +2,54 @@
 		<div class="col-md-6">
 			<p class="text-primary" style="font-size: 20px;">
 				<img src="images/phone.png"> call us: <b id="phone">(02) 470 9283</b> &nbsp
-				<img src="images/email.png"> email us: <b id="email"><a href="#">ovejera.jimpaulo@gmail.com</a></b><br/>
-				<blockquote>
-				<p class="cool-words"><b>"SOME COOL WORDS HERE"</b></p>
-				<footer>Some famous person in <cite title="Source Title">GIBX Room</cite></footer>
-				</blockquote>
+				<img src="images/email.png"> email us: <b id="email"><a href="#">insureme@insureme.com.ph</a></b><br/>
 			</p>
+			<div class="row">
+				<div class="col-md-6" style="background-color: none;">
+					<p>
+						<b><u>Address:</u></b>
+						<small>
+							11/F Rm. 1108-1109 DMG Center Bldg., Domingo M. Guevara St., Mandaluyong City, Philippines
+						</small><br/><br/>
+						<b><u>Operation Hours:</u></b>
+						<small>
+							Mon - Fri, 8am - 10pm & Sat - Sun, 9am - 6pm
+						</small>
+					</p>
+				</div>
+				<div class="col-md-6" style="background-color: none;">
+					<p>
+						
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-offset-4 col-md-2 text-left">
+		<div class="col-md-offset-2 col-md-4 text-right">
 			<a href="facebook.com"><img src="images/fb.png"></a>
 			<img src="images/twitter.png">
 			<img src="images/g+.png">
+			<a href="facebook.com"><img src="images/instagram.png"></a>
+			<a href="facebook.com"><img src="images/youtube.png"></a>
 			<div class="row like-us">
-				<div class="col-md-12">
+				<div class="col-md-6 col-md-offset-2">
 					<p>
 					<b>Like Us!</b>
 					<img src="images/like-arrow.png">
 					</p>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-12" style="background-color: none;">
+					<p class="text-right">
+						<blockquote>
+						<p class="cool-words"><b>"SOME COOL WORDS HERE"</b></p>
+						<footer>Some famous person in <cite title="Source Title">GIBX Room</cite></footer>
+						</blockquote>
+					</p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -40,11 +69,11 @@
 
 					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-2">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Support</a></li>
+							<li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+							<li><a href="/blogs">Blogs</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/contacts">Contact</a></li>
+							<li><a href="/support">Support</a></li>
 							<!-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
@@ -65,7 +94,7 @@
 							<button type="submit" class="btn btn-default">Search</button>
 						</form>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">FAQ</a></li>
+							<li><a href="/faq">FAQ</a></li>
 						</ul>
 					</div>
 				</div>

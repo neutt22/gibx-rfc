@@ -2,6 +2,10 @@ body{
 	background-color: #D8D8D8;
 }
 
+.accent{
+	background-color: #2c3e50;
+}
+
 .row-no-padding {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
@@ -38,7 +42,7 @@ body{
 }
 
 .home-left{
-	background-color: white;
+	background-color: #2c3e50;
 	background-image: url('/images/car_photo_1.jpg');
 	background-repeat: no-repeat;
 	background-size:100%;
@@ -60,7 +64,6 @@ body{
 
 .home-right-pane{
 	/*background-color: #2c3e50;*/
-	background-color: white;
 	background-image: url('/images/compare_photo_1.jpg');
 	background-repeat: no-repeat;
 	background-size:100%;

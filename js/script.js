@@ -1,5 +1,8 @@
 $(window).load(function(){
 
+	// $("iframe").wrap('<div class="embed-responsive embed-responsive-4by3"/>');
+	// $("iframe").addClass('embed-responsive-item');
+
 	// $('.slider')._TMS({
 	// 	preset:'diagonalFade',
 	// 	easing:'easeOutQuad',

@@ -10,14 +10,14 @@ Route::get('/news', function()
 	return View::make('news');
 });
 
-Route::get('/services', function()
+Route::get('/blogs', function()
 {
-	return View::make('services');
+	return View::make('blogs');
 });
 
-Route::get('/products', function()
+Route::get('/about', function()
 {
-	return View::make('products');
+	return View::make('about');
 });
 
 Route::get('/contacts', function()
@@ -30,3 +30,7 @@ Route::get('/years', array('uses' => 'HomeController@getYears'));
 Route::get('/models', array('uses' => 'HomeController@getModels'));
 
 Route::get('/compare', array('uses' => 'HomeController@getCompare'));
+
+Route::get('/okc', function(){
+	return View::make('okc');
+});

@@ -1,105 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Contacts</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/zerogrid.css">
-<link rel="stylesheet" href="css/responsive.css">
-<script type="text/javascript" src="js/jquery-1.6.js" ></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_400.font.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_700.font.js"></script>
-<script type="text/javascript" src="js/tabs.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-	<style type="text/css">
-		.bg{ behavior: url(js/PIE.htc); }
-	</style>
-<![endif]-->
-<!--[if lt IE 7]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
-		</div>
-<![endif]-->
-</head>
-<body id="page5">
-	<div class="body1">
-	<div class="body2">
-	<div class="body5">
-		<div class="main zerogrid">
-<!-- header -->
-			<header>
-				@include('include/header')
-			</header>
-<!-- header end-->
-		</div>
-	</div>
-	</div>
-	</div>
-	<div class="body3">
-		<div class="main zerogrid">
-<!-- content -->
-			<article id="content">
-				<div class="wrapper row">
-					<section class="col-3-4">
-					<div class="wrap-col">
-						<h2 class="under">Contact form</h2>
-						<form id="ContactForm" method="post">
-						<div>
-							<div  class="wrapper">
-								<span>Your Name:</span>
-								<input type="text" class="input" >
-							</div>
-							<div  class="wrapper">
-								<span>Your City:</span>
-								<input type="text" class="input" >
-							</div>
-							<div  class="wrapper">
-								<span>Your E-mail:</span>
-								<input type="text" class="input" >
-							</div>
-							<div  class="textarea_box">
-								<span>Your Message:</span>
-								<textarea name="textarea" cols="1" rows="1"></textarea>
-							</div>
-							<a href="#" onClick="document.getElementById('ContactForm').submit()">Send</a>
-							<a href="#" onClick="document.getElementById('ContactForm').reset()">Clear</a>
-						</div>
-						</form>
-					</div>
-					</section>
-					<section class="col-1-4">
-					<div class="wrap-col">
-						<h2 class="under">Contacts</h2>
-						<div id="address"><span>Country:<br>
-								City:<br>
-								Telephone:<br>
-								Email:</span>
-								USA<br>
-								San Diego<br>
-								+354 5635600<br>
-								<a href="mailto:" class="color2">elenwhite@mail.com</a></div>
-						<h2 class="under">Miscellaneous</h2>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volupta- tum deleniti atque corrupti quos dolores et quas molestias excep- turi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum.</p>
-					</div>
-					</section>
-				</div>
+@extends('master')
 
-			</article>
+@section('header')
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+	function initialize() {
+	  var mapProp = {
+	    center:new google.maps.LatLng(14.5797657,121.0459423),
+	    zoom:18,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  var map=new google.maps.Map(document.getElementById("map"),mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	// google.maps.event.addDomListener(window, "resize", function() {
+	// var center = map.getCenter();
+	// google.maps.event.trigger(map, "resize");
+	// map.setCenter(center);
+</script>
+@endsection
+
+@section('content')
+	<div class="row">
+		<div class="col-md-12" id="map" style="height: 400px;"></div>
+	</div>
+
+	<div class="row" style="background-color: #dcdfe3; color: whixte;">
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style="font-weight: bold;">
+					<h2>Contact Us</h2>
+					<p>You may contact us by filling in this form any time you need professional support or have any questions.</p>
+					<p>You can also fill in the form to leave your comments or feedback.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Contact Information</h2>
+					<address>
+						<strong>GIBX Division</strong><br>
+						11/F Rm. 1108-1109 DMG Center Bldg., Domingo M. Guevara St.,<br>
+						Mandaluyong City, Philippines<br>
+						<abbr title="Telephone">Tel:</abbr> (02) 470 9283
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6" style="padding-top: 20px; padding-bottom: 20px;">
+			<form>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input class="form-control" id="name" placeholder="Name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input class="form-control" id="subject" placeholder="Subject">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" name="message" rows="5"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary center-block btn-block">Submit</button>
+			</form>
 		</div>
 	</div>
-	@include('include/footer')
-<script type="text/javascript"> Cufon.now(); </script>
-<script>
-	$(document).ready(function() {
-		tabs.init();
-	})
-</script>
-</body>
-</html>
+@endsection
